@@ -25,9 +25,9 @@ const WhyChooseUs = () => {
     <>
       <div className="section">
         <div className="Resizer">
-          <div className="w-full px-4 md:px-12 flex flex-col md:flex-row items-center justify-center gap-10">
+          <div className="w-full px-4 flex flex-col md:flex-row items-center justify-center gap-10">
             {/* Left - Image with underground background */}
-            <div className="relative w-full md:w-1/2 rounded-lg overflow-hidden shadow-lg h-[400px]">
+            <div className="relative w-full md:w-1/2 rounded-lg overflow-hidden h-[400px]">
               {/* Background image */}
               <img
                 src="https://res.cloudinary.com/ddj0k8gdw/image/upload/v1760373483/DigiftedHub/Rectangle_14_1_y7vwep.jpg"
@@ -47,11 +47,15 @@ const WhyChooseUs = () => {
 
             {/* Right - Content */}
             <div className="w-full md:w-1/2">
-              <p className="text-base font-medium text-pink-600 mb-3">Our Core Values</p>
+              <p className="text-base font-medium text-pink-600 mb-2 flex items-center gap-2">
+                <span className="inline-block w-3 h-3 bg-pink-600 rounded-sm"></span>
+                Our Core Values
+              </p>
+
               <h2 className="text-3xl md:text-4xl font-bold mb-3 text-black">
                 Why Choose Us
               </h2>
-              <p className="text-gray-600 mb-6 text-base">
+              <p className="text-black mb-6 text-base">
                 Ensure surety when you book with Digifted Studio.
               </p>
 
