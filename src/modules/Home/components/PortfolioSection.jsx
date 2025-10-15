@@ -37,11 +37,11 @@ const PortfolioSection = () => {
                         </div>
 
                         {/* Logos grid */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 mt-20 gap-6">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 mt-16 gap-6">
                             {companies.map((item) => (
                                 <div
                                     key={item.id}
-                                    className="flex items-cente mb-5 justify-center h-64 transition"
+                                    className="flex items-cente mb-3 justify-center h-64 transition"
                                 >
                                     <img
                                         src={item.logo}

@@ -31,7 +31,7 @@ const CaseStudySection = () => {
                                 <h2 className="text-3xl md:text-4xl font-semibold">Our Case Study</h2>
                             </div>
 
-                            <button className="bg-gradient text-white cursor-pointer py-3 px-8 rounded-md font-normal hover:opacity-90 transition">
+                            <button className="bg-gradient hidden md:block text-white cursor-pointer py-3 px-8 rounded-md font-normal hover:opacity-90 transition">
                                 Contact Us
                             </button>
                         </div>
