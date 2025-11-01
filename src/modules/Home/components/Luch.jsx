@@ -1,20 +1,5 @@
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import { routes } from "./routes";
-// const App = () => {
-//   return (
-//     <Router>
-//       <Routes>
-//         {routes.map((route, index) => (
-//           <Route key={index} path={route.path} element={route.element} />
-//         ))}
-//       </Routes>
-//     </Router>
-//   );
-// };
-// export default App;
-
-import { useState, useEffect } from "react";
-import Countdown from './modules/Home/components/Countdown';
+import { useState,  } from "react";
+import Countdown from './Countdown';
 
 export default function App() {
   const [email, setEmail] = useState("");
@@ -47,11 +32,11 @@ export default function App() {
       <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 text-white px-4">
         <div className="max-w-4xl mx-auto text-center space-y-12">
           {/* Logo */}
-          <img src={logo} alt="Logo" className="mx-auto h-20 md:h-28" />
+          <img src='https://res.cloudinary.com/ddj0k8gdw/image/upload/v1759071880/DigiftedHub/Frame_3_bgkxcs.png' alt="Logo" className="mx-auto h-20 md:h-28" />
 
           {/* Headline */}
           <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-            We’re <span className="underline decoration-wavy">launching soon</span>
+            We’re <span className="underline">launching soon</span>
           </h1>
 
           {/* Sub-headline */}
@@ -70,7 +55,7 @@ export default function App() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="you@example.com"
-              className="flex-1 px-5 py-3 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-pink-400"
+              className="flex-1 px-5 py-3 rounded-lg text-white placeholder-white border border-gray-200 outline-none"
             />
             <button
               type="submit"
@@ -114,8 +99,8 @@ export default function App() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 bg-gray-900 text-gray-400 text-center">
-        <p>© {new Date().getFullYear()} My Awesome Site. All rights reserved.</p>
+      <footer className="py-8 bg-gray-900 text-white text-center">
+        <p>© {new Date().getFullYear()} Digifted Hub Site. All rights reserved.</p>
         <div className="mt-4 flex justify-center space-x-6">
           {["Twitter", "GitHub", "LinkedIn"].map((s) => (
             <a

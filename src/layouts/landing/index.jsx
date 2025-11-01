@@ -6,9 +6,9 @@ const LandingLayout = () => {
   return (
     <>
       <div>
-        <Header />
+        
         <Outlet />
-        <Footer />
+       
       </div>
     </>
   );
