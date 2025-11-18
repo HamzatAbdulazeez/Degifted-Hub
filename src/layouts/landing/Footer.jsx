@@ -17,7 +17,7 @@ export class Footer extends Component {
               {/* Logo */}
               <div className="flex flex-col gap-2">
                 <NavLink to="/">
-                  <img src="https://res.cloudinary.com/ddj0k8gdw/image/upload/v1759071880/DigiftedHub/Frame_3_bgkxcs.png " className="h-8 w-auto"
+                  <img src="https://res.cloudinary.com/ddj0k8gdw/image/upload/v1763487665/DigiftedHub/unnamed_1_gnjx1p.jpg"
                     draggable="false" alt="" />
                 </NavLink>
               </div>
@@ -51,7 +51,7 @@ export class Footer extends Component {
               <div className="space-y-6">
                 <h3 className="text-xl font-semibold">Get Started</h3>
                 <p className="text-gray-400 text-sm leading-loose">
-                  At DiGifted Hub, we provide strategic capital and unparalleled video and content production services to companies and users.
+                  At Digifted Creations Hub Limited is a leading multimedia and creative production company designed for visionary creators, businesses, and brands.
                 </p>
                 <button className="bg-gradient text-white px-8 py-3 cursor-pointer rounded-md transition">
                   Get a Quote

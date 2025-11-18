@@ -64,11 +64,16 @@ const Header = () => {
                         <div className="flex items-center">
                             <div className="flex items-center space-x-2">
                                 <NavLink to="/">
-                                    <img src="https://res.cloudinary.com/ddj0k8gdw/image/upload/v1759071880/DigiftedHub/Frame_3_bgkxcs.png " className="h-8 w-auto"
-                                        draggable="false" alt="" />
+                                    <img
+                                        src="https://res.cloudinary.com/ddj0k8gdw/image/upload/v1763488041/DigiftedHub/unnamed__1_-removebg-preview_gedaq0.png"
+                                        alt=""
+                                        draggable="false"
+                                        className="w-52 h-auto"
+                                    />
                                 </NavLink>
                             </div>
                         </div>
+
 
                         {/* Desktop Navigation */}
                         <nav className="hidden md:flex items-center space-x-8">
@@ -111,10 +116,10 @@ const Header = () => {
                             {/* Mobile menu header */}
                             <div className="flex items-center justify-between mb-8">
                                 <div className="flex items-center space-x-2">
-                                <NavLink to="/">
-                                    <img src="https://res.cloudinary.com/ddj0k8gdw/image/upload/v1759071880/DigiftedHub/Frame_3_bgkxcs.png " className="h-10 w-auto"
-                                        draggable="false" alt="" />
-                                </NavLink>
+                                    <NavLink to="/">
+                                        <img src="https://res.cloudinary.com/ddj0k8gdw/image/upload/v1759071880/DigiftedHub/Frame_3_bgkxcs.png " className="h-10 w-auto"
+                                            draggable="false" alt="" />
+                                    </NavLink>
                                 </div>
                                 <button
                                     onClick={toggleMobileMenu}

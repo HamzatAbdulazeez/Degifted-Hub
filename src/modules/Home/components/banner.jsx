@@ -85,8 +85,8 @@ const DynamicBanner = () => {
 
         {/* Subtitle */}
         <p className="text-lg md:text-xl text-white/80 max-w-4xl mx-auto mb-12 px-4 leading-relaxed">
-          A complete creative ecosystem for studios, live events, business solutions,
-          and digital strategy.
+        From cinematic video productions to high-quality live streaming, photography, and digital marketing, Digifted Hub brings your ideas to life with precision and creativity.
+
         </p>
 
         {/* CTA Buttons - Centered */}

@@ -5,11 +5,11 @@ const WhyChooseUs = () => {
   const features = [
     {
       icon: <ShieldCheck className="w-6 h-6 text-white" />,
-      title: "Professionalism",
+      title: "Top-Tier Production Quality",
     },
     {
       icon: <Settings className="w-6 h-6 text-white" />,
-      title: "State-of-the-art Equipment",
+      title: "Creative Excellence",
     },
     {
       icon: <Layers className="w-6 h-6 text-white" />,
@@ -17,7 +17,7 @@ const WhyChooseUs = () => {
     },
     {
       icon: <Package className="w-6 h-6 text-white" />,
-      title: "Flexible Packages",
+      title: "Global Reach",
     },
   ];
 
@@ -56,11 +56,11 @@ const WhyChooseUs = () => {
                 Why Choose Us
               </h2>
               <p className="text-black mb-6 text-base">
-                Ensure surety when you book with Digifted Studio.
+              At Digifted Hub, we merge creativity with technology to help individuals and brands communicate their stories powerfully.
               </p>
 
               {/* Features */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                 {features.map((item, index) => (
                   <div
                     key={index}
@@ -74,8 +74,12 @@ const WhyChooseUs = () => {
                 ))}
               </div>
 
+              <p className="text-black mb-6 leading-relaxed text-base">
+              Your vision deserves a creative home — and that home is Digifted.
+              </p>
+
               <button className="bg-gradient text-white py-4 px-8 cursor-pointer rounded-lg transition">
-                Contact Us
+                View Our Service
               </button>
             </div>
           </div>
