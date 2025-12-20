@@ -24,8 +24,8 @@ export class Footer extends Component {
 
               {/* Contact Info */}
               <div className="text-right text-sm space-y-2">
-                <p>+234 091 867 9876</p>
-                <p>Email: hello@digiftedhub.com</p>
+                <p>+234 9052464819</p>
+                <p>Email:  info@digiftedhub.com                </p>
               </div>
             </div>
 
@@ -63,16 +63,16 @@ export class Footer extends Component {
                 <a href="#" className="text-white hover:text-white flex items-center gap-2">
                   <span>→</span> LINKEDIN
                 </a>
-                <a href="#" className="text-white hover:text-white flex items-center gap-2">
+                <a href="https://www.instagram.com/digiftedhub/" target='blank' className="text-white hover:text-white flex items-center gap-2">
                   <span>→</span> INSTAGRAM
                 </a>
-                <a href="#" className="text-white hover:text-white flex items-center gap-2">
+                <a href="https://x.com/DigiftedHub" target='blank' className="text-white hover:text-white flex items-center gap-2">
                   <span>→</span> X <span className="text-xs italic">(formerly Twitter)</span>
                 </a>
-                <a href="#" className="text-white hover:text-white flex items-center gap-2">
+                <a href="https://www.youtube.com/@DigiftedStudio" target='blank' className="text-white hover:text-white flex items-center gap-2">
                   <span>→</span> YOUTUBE
                 </a>
-                <a href="#" className="text-white hover:text-white flex items-center gap-2">
+                <a href="https://www.facebook.com/digiftedhub/" target='blank' className="text-white hover:text-white flex items-center gap-2">
                   <span>→</span> FACEBOOK
                 </a>
                 <a href="#" className="text-white hover:text-white flex items-center gap-2">
@@ -83,7 +83,7 @@ export class Footer extends Component {
 
             {/* Bottom Section */}
             <div className="border-t border-[#5B5B5B] mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white">
-              <p>No 0, Company Address, Lagos, Nigeria.</p>
+              <p>51, Babaponmile street, Onipetes estate, Mangoro Ikeja Lagos State.</p>
               <p>© Copyright {new Date().getFullYear()} , All Rights Reserved</p>
             </div>
           </div>

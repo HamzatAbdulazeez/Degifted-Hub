@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Menu, X, Facebook, Instagram, Youtube, } from 'lucide-react';
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -29,16 +29,19 @@ const Header = () => {
                             <div className="flex items-center space-x-2">
                                 {/* Social media icons */}
                                 <div className="flex items-center space-x-4 pr-6">
-                                    <a href="#" className="hover:text-pink-200 transition-colors">
+                                    <a href="https://www.facebook.com/digiftedhub/" target='blank' className="hover:text-pink-200 transition-colors">
                                         <Facebook size={20} />
                                     </a>
-                                    <a href="#" className="hover:text-pink-200 transition-colors">
+                                    <a href="https://www.instagram.com/digiftedhub/" target='blank' className="hover:text-pink-200 transition-colors">
                                         <Instagram size={20} />
                                     </a>
-                                    <a href="#" className="hover:text-pink-200 transition-colors">
-                                        <Linkedin size={20} />
+                                    <a href="https://www.youtube.com/@DigiftedStudio" target='blank' className="hover:text-pink-200 transition-colors">
+                                        <Youtube size={20} />
                                     </a>
-                                    <a href="#" className="hover:text-pink-200 transition-colors">
+                                    {/* <a href="https://www.tiktok.com/@digiftedhub" target='blank' className="hover:text-pink-200 transition-colors">
+                                        <SiTiktok size={20} />
+                                    </a> */}
+                                    <a href="https://x.com/DigiftedHub" target='blank' className="hover:text-pink-200 transition-colors">
                                         <X size={20} />
                                     </a>
                                 </div>
@@ -48,9 +51,9 @@ const Header = () => {
                             <div className="flex items-center">
                                 {/* Contact info with border separators */}
                                 <div className="flex items-center">
-                                    <span className="pl-6 pr-6 border-l border-white/30">+234 091 867 9876</span>
-                                    <span className="pl-6 pr-6 border-l border-white/30">Email: hello@digiftedhub.com</span>
-                                    <span className="pl-6 border-l border-white/30">Address, Lagos, Nigeria.</span>
+                                    <span className="pl-6 pr-6 border-l border-white/30">+234 9052464819</span>
+                                    <span className="pl-6 pr-6 border-l border-white/30">Email:  info@digiftedhub.com                                    </span>
+                                    <span className="pl-6 border-l border-white/30">51, Babaponmile street Onipetes estate Mangoro Ikeja , Lagos State</span>
                                 </div>
                             </div>
                         </div>
