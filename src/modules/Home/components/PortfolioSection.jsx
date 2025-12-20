@@ -1,11 +1,10 @@
 import React from "react";
 
 const companies = [
-    { id: 1, logo: "https://res.cloudinary.com/ddj0k8gdw/image/upload/v1760497909/DigiftedHub/Group_1321314869_kokbcm.png" },
-    { id: 2, logo: "https://res.cloudinary.com/ddj0k8gdw/image/upload/v1760497908/DigiftedHub/Group_1321314867_zryvo9.png" },
-    { id: 3, logo: "https://res.cloudinary.com/ddj0k8gdw/image/upload/v1760497908/DigiftedHub/Group_1321314868_mn9mvz.png" },
-    { id: 4, logo: "https://res.cloudinary.com/ddj0k8gdw/image/upload/v1760497908/DigiftedHub/Group_1321314866_v3y5sx.png" },
-    { id: 5, logo: "https://res.cloudinary.com/ddj0k8gdw/image/upload/v1760497908/DigiftedHub/Group_1321314866_v3y5sx.png" },
+    { id: 1, logo: "https://res.cloudinary.com/ddj0k8gdw/image/upload/v1766204164/DigiftedHub/1_eaiwep.jpg" },
+    { id: 2, logo: "https://res.cloudinary.com/ddj0k8gdw/image/upload/v1766204165/DigiftedHub/2_rtqpbd.jpg" },
+    { id: 3, logo: "https://res.cloudinary.com/ddj0k8gdw/image/upload/v1766204175/DigiftedHub/3_cbovsg.png" },
+    { id: 4, logo: "https://res.cloudinary.com/ddj0k8gdw/image/upload/v1766204154/DigiftedHub/4_xhxdrs.png" },
 ];
 
 const PortfolioSection = () => {

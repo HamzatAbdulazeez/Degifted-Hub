@@ -3,24 +3,34 @@ import React from "react";
 const TestimonialsAndBlog = () => {
     const testimonials = [
         {
-            name: "Risconhomes",
-            text: "A renowned travel agency dedicated to crafting exceptional Hajj and Umrah experiences for Pilgrims",
-            img: "https://res.cloudinary.com/ddj0k8gdw/image/upload/v1766204164/DigiftedHub/1_eaiwep.jpg",
+            name: "Chris Delgado",
+            text: "“Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...”",
+            img: "https://i.pravatar.cc/100?img=1",
         },
         {
-            name: "Albarakatulilahi",
-            text: "A renowned travel agency dedicated to crafting exceptional Hajj and Umrah experiences for Pilgrims",
-            img: "https://res.cloudinary.com/ddj0k8gdw/image/upload/v1766204165/DigiftedHub/2_rtqpbd.jpg",
+            name: "Sophia Martinez",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu dui et orci lacinia accumsan.",
+            img: "https://i.pravatar.cc/100?img=2",
         },
         {
-            name: "SMNaija",
-            text: "A Nigerian social media platform and brand that provides news, entertainment, and celebrity updates",
-            img: "https://res.cloudinary.com/ddj0k8gdw/image/upload/v1766204175/DigiftedHub/3_cbovsg.png",
+            name: "Michael Torres",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae consectetur eros.",
+            img: "https://i.pravatar.cc/100?img=3",
         },
         {
-            name: "Ultimate Maca",
-            text: "A known brand which specialise primarily on supplements, marketed for body enhancement, weight gain, and general health",
-            img: "https://res.cloudinary.com/ddj0k8gdw/image/upload/v1766204154/DigiftedHub/4_xhxdrs.png",
+            name: "Hamzat Abdul",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae consectetur eros.",
+            img: "https://i.pravatar.cc/100?img=4",
+        },
+        {
+            name: "Danielle Carter",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae consectetur eros.",
+            img: "https://i.pravatar.cc/100?img=5",
+        },
+        {
+            name: "James Holloway",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae consectetur eros.",
+            img: "https://i.pravatar.cc/100?img=6",
         },
     ];
 
