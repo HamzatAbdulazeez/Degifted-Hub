@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
@@ -33,9 +34,11 @@ const AboutUs = () => {
               </p>
 
 
+              <Link to={"/contact"}>
               <button className="bg-gradient text-white py-4 px-8 cursor-pointer rounded-lg transition">
                 Contact Us
               </button>
+              </Link>
             </div>
 
             {/* Right - Image */}

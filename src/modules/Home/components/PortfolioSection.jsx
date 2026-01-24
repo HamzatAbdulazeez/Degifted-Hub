@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 const companies = [
     { id: 1, logo: "https://res.cloudinary.com/ddj0k8gdw/image/upload/v1766204164/DigiftedHub/1_eaiwep.jpg" },
@@ -54,12 +56,14 @@ const PortfolioSection = () => {
 
                         {/* Optional rotating contact icon */}
                         <div className="hidden md:block  absolute top-0 right-8">
-                            <img
-                                src="https://res.cloudinary.com/ddj0k8gdw/image/upload/v1760528750/DigiftedHub/image_6_naqejs.jpg"
-                                alt="Decorative"
-                                draggable="false"
-                                className="w-24 h-24 rounded-full object-cover border border-gray-300 shadow"
-                            />
+                            <Link to={"/contact"}>
+                                <img
+                                    src="https://res.cloudinary.com/ddj0k8gdw/image/upload/v1760528750/DigiftedHub/image_6_naqejs.jpg"
+                                    alt="Decorative"
+                                    draggable="false"
+                                    className="w-24 h-24 rounded-full object-cover border border-gray-300 shadow"
+                                />
+                            </Link>
                         </div>
                     </div>
                 </div>

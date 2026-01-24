@@ -1,5 +1,6 @@
 import React from "react";
 import { ShieldCheck, Settings, Package, Layers } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const WhyChooseUs = () => {
   const features = [
@@ -56,7 +57,7 @@ const WhyChooseUs = () => {
                 Why Choose Us
               </h2>
               <p className="text-black mb-6 text-base">
-              At Digifted Hub, we merge creativity with technology to help individuals and brands communicate their stories powerfully.
+                At Digifted Hub, we merge creativity with technology to help individuals and brands communicate their stories powerfully.
               </p>
 
               {/* Features */}
@@ -75,12 +76,14 @@ const WhyChooseUs = () => {
               </div>
 
               <p className="text-black mb-6 leading-relaxed text-base">
-              Your vision deserves a creative home — and that home is Digifted.
+                Your vision deserves a creative home — and that home is Digifted.
               </p>
 
-              <button className="bg-gradient text-white py-4 px-8 cursor-pointer rounded-lg transition">
-                View Our Service
-              </button>
+              <Link to={"/services"}>
+                <button className="bg-gradient text-white py-4 px-8 cursor-pointer rounded-lg transition">
+                  View Our Service
+                </button>
+              </Link>
             </div>
           </div>
         </div>

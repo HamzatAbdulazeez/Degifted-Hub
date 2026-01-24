@@ -6,12 +6,13 @@ const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const navItems = [
+        { label: 'Home', path: '/' },
         { label: 'About Us', path: '/about' },
+        { label: 'Our Services', path: '/services' },
         { label: 'Studios', path: '/studios' },
+        { label: 'Rental Pricing', path: '/pricing' },
         { label: 'Live & Events', path: '/live-events' },
         { label: 'Business Solutions', path: '/business-solutions' },
-        { label: 'Digital Strategy', path: '/digital-strategy' },
-        { label: 'Creative Services', path: '/creative-services' },
     ];
 
     const toggleMobileMenu = () => {
@@ -94,7 +95,7 @@ const Header = () => {
                         {/* Contact Us Button & Mobile Menu Toggle */}
                         <div className="flex items-center space-x-4">
                             <NavLink 
-                                to="/contact-us"
+                                to="/contact"
                                 className="hidden md:block cursor-pointer bg-[#053276] text-white px-8 py-3 rounded-md font-normal hover:bg-pink-50 transition-colors duration-200"
                             >
                                 Contact Us
@@ -117,13 +118,13 @@ const Header = () => {
                 <div className="fixed inset-0 z-50 md:hidden">
                     <div className="fixed inset-0 bg-black/50" onClick={toggleMobileMenu}></div>
                     {/* Flyout Menu */}
-                    <div className="fixed top-0 right-0 h-full w-80 bg-gradient-to-b from-purple-600 via-purple-500 to-pink-500 text-white shadow-xl transform transition-transform duration-300 ease-in-out">
+                    <div className="fixed top-0 right-0 h-full w-80 bg-black text-white transform transition-transform duration-300 ease-in-out">
                         <div className="p-6">
                             {/* Mobile menu header */}
                             <div className="flex items-center justify-between mb-8">
                                 <div className="flex items-center space-x-2">
                                     <NavLink to="/">
-                                        <img src="https://res.cloudinary.com/ddj0k8gdw/image/upload/v1759071880/DigiftedHub/Frame_3_bgkxcs.png " className="h-10 w-auto"
+                                        <img src="https://res.cloudinary.com/ddj0k8gdw/image/upload/v1763488041/DigiftedHub/unnamed__1_-removebg-preview_gedaq0.png " className="h-10 w-auto"
                                             draggable="false" alt="" />
                                     </NavLink>
                                 </div>
@@ -141,7 +142,7 @@ const Header = () => {
                                     <NavLink
                                         key={index}
                                         to={item.path}
-                                        className="block py-3 px-4 rounded-lg hover:bg-white/20 transition-colors duration-200 font-medium text-lg"
+                                        className="block py-2 px-4 rounded-lg hover:bg-white/20 transition-colors duration-200 text-base"
                                         onClick={toggleMobileMenu}
                                     >
                                         {item.label}
@@ -153,25 +154,14 @@ const Header = () => {
                             <div className="mt-8">
                                 <NavLink
                                     to="/contact-us"
-                                    className="w-full bg-white text-purple-600 px-6 py-3 rounded-full font-semibold hover:bg-pink-50 transition-colors duration-200"
+                                    className="w-full bg-white text-black px-6 py-3 rounded-md hover:bg-pink-50 transition-colors duration-200"
                                     onClick={toggleMobileMenu}
                                 >
                                     Contact Us
                                 </NavLink>
                             </div>
 
-                            {/* Mobile Contact Info */}
-                            <div className="mt-8 pt-6 border-t border-white/20 space-y-3 text-sm">
-                                <div className="flex items-center space-x-3">
-                                    <Facebook size={18} />
-                                    <Instagram size={18} />
-                                    <Linkedin size={18} />
-                                    <X size={18} />
-                                </div>
-                                <p>+234 091 867 9876</p>
-                                <p>hello@digiftedhub.com</p>
-                                <p>Address, Lagos, Nigeria.</p>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
