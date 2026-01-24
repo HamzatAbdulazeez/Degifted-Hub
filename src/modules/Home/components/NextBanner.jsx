@@ -41,7 +41,7 @@ const AboutUs = () => {
             {/* Right - Image */}
             <div className="relative w-full md:w-1/2 rounded-lg overflow-hidden h-[400px]">
               <img
-                src="https://res.cloudinary.com/ddj0k8gdw/image/upload/v1760373483/DigiftedHub/Rectangle_14_1_y7vwep.jpg"
+                src="https://res.cloudinary.com/ddj0k8gdw/image/upload/v1769224999/DigiftedHub/photo-1518081461904-9d8f136351c2_1_h5odsu.jpg"
                 alt="About Us Background"
                 className="absolute inset-0 w-full h-full object-cover"
               />

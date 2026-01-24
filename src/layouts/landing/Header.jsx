@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import { Menu, X, Facebook, Instagram, Youtube, } from 'lucide-react';
+import { Menu, X, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const navItems = [
-        'Studios',
-        'Live & Events',
-        'Business Solutions',
-        'Digital Strategy',
-        'Creative Services',
-        'Blog'
+        { label: 'About Us', path: '/about' },
+        { label: 'Studios', path: '/studios' },
+        { label: 'Live & Events', path: '/live-events' },
+        { label: 'Business Solutions', path: '/business-solutions' },
+        { label: 'Digital Strategy', path: '/digital-strategy' },
+        { label: 'Creative Services', path: '/creative-services' },
     ];
 
     const toggleMobileMenu = () => {
@@ -20,9 +20,9 @@ const Header = () => {
 
     return (
         <>
-            <header className="bg-gradient-to-r from-purple-600 via-purple-500 to-pink-500 text-white">
+            <header className="bg-white text-black ">
                 {/* Top contact bar */}
-                <div className="hidden md:block border-b border-white/20">
+                <div className="hidden md:block border-b border-black/20">
                     <div className="Resizer py-3">
                         <div className="flex justify-between items-center text-sm">
                             {/* Logo at center-left */}
@@ -81,21 +81,24 @@ const Header = () => {
                         {/* Desktop Navigation */}
                         <nav className="hidden md:flex items-center space-x-8">
                             {navItems.map((item, index) => (
-                                <a
+                                <NavLink
                                     key={index}
-                                    href="#"
-                                    className="hover:text-pink-200 transition-colors duration-200 font-normal text-sm"
+                                    to={item.path}
+                                    className="hover:text-red-500 transition-colors duration-200 font-normal text-sm"
                                 >
-                                    {item}
-                                </a>
+                                    {item.label}
+                                </NavLink>
                             ))}
                         </nav>
 
                         {/* Contact Us Button & Mobile Menu Toggle */}
                         <div className="flex items-center space-x-4">
-                            <button className="hidden md:block  cursor-pointer bg-white text-[#E61F65] px-8 py-3 rounded-md font-normal hover:bg-pink-50 transition-colors duration-200">
+                            <NavLink 
+                                to="/contact-us"
+                                className="hidden md:block cursor-pointer bg-[#053276] text-white px-8 py-3 rounded-md font-normal hover:bg-pink-50 transition-colors duration-200"
+                            >
                                 Contact Us
-                            </button>
+                            </NavLink>
 
                             {/* Mobile menu button */}
                             <button
@@ -135,25 +138,26 @@ const Header = () => {
                             {/* Mobile Navigation */}
                             <nav className="space-y-4">
                                 {navItems.map((item, index) => (
-                                    <a
+                                    <NavLink
                                         key={index}
-                                        href="#"
+                                        to={item.path}
                                         className="block py-3 px-4 rounded-lg hover:bg-white/20 transition-colors duration-200 font-medium text-lg"
                                         onClick={toggleMobileMenu}
                                     >
-                                        {item}
-                                    </a>
+                                        {item.label}
+                                    </NavLink>
                                 ))}
                             </nav>
 
                             {/* Mobile Contact Us Button */}
                             <div className="mt-8">
-                                <button
+                                <NavLink
+                                    to="/contact-us"
                                     className="w-full bg-white text-purple-600 px-6 py-3 rounded-full font-semibold hover:bg-pink-50 transition-colors duration-200"
                                     onClick={toggleMobileMenu}
                                 >
                                     Contact Us
-                                </button>
+                                </NavLink>
                             </div>
 
                             {/* Mobile Contact Info */}

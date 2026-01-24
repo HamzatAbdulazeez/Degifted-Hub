@@ -84,7 +84,7 @@ export class Footer extends Component {
             {/* Bottom Section */}
             <div className="border-t border-[#5B5B5B] mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white">
               <p>51, Babaponmile street, Onipetes estate, Mangoro Ikeja Lagos State.</p>
-              <p>© Copyright {new Date().getFullYear()} , All Rights Reserved</p>
+              <p>© Copyright {new Date().getFullYear()} At Digifted Creations Hub Limited , All Rights Reserved</p>
             </div>
           </div>
         </footer>

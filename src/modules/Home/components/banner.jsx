@@ -29,16 +29,16 @@ const DynamicBanner = () => {
     },
     { 
       title: 'Digifted Corporate Solutions (Business-Focused Media)', 
-      imageUrl: 'https://res.cloudinary.com/ddj0k8gdw/image/upload/v1759075915/DigiftedHub/Rectangle_6_l7utcl.jpg'
+      imageUrl: 'https://res.cloudinary.com/ddj0k8gdw/image/upload/v1769225600/DigiftedHub/0305_638146212701526352_fdegiu.jpg'
     },
     { 
       title: 'Digifted Digital Marketing (Online Growth & Branding)', 
-      imageUrl: 'https://res.cloudinary.com/ddj0k8gdw/image/upload/v1759075919/DigiftedHub/Rectangle_5_eydtef.jpg'
+      imageUrl: 'https://res.cloudinary.com/ddj0k8gdw/image/upload/v1769225662/DigiftedHub/istockphoto-1648044864-612x612_sp0l4j.jpg'
     },
     // Duplicates for seamless loop
     { 
       title: 'Digifted Creative Services (Post-Production & Content Creation)', 
-      imageUrl: 'https://res.cloudinary.com/ddj0k8gdw/image/upload/v1759075919/DigiftedHub/Rectangle_5_eydtef.jpg'
+      imageUrl: 'https://res.cloudinary.com/ddj0k8gdw/image/upload/v1769225740/DigiftedHub/istockphoto-881921586-612x612_xhfnkl.jpg'
     },
   ];
 

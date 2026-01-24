@@ -3,33 +3,33 @@ import React from "react";
 const TestimonialsAndBlog = () => {
     const testimonials = [
         {
-            name: "Chris Delgado",
-            text: "“Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...”",
+            name: "Adeyemi Johnson",
+            text: "“Digifted Hub exceeded my expectations. The studio setup is top-notch, and the team is highly professional. I’ll definitely be back.”",
             img: "https://i.pravatar.cc/100?img=1",
         },
         {
-            name: "Sophia Martinez",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu dui et orci lacinia accumsan.",
+            name: "Blessing Okafor",
+            text: "Clean environment, quality equipment, and excellent customer service. Digifted Hub truly understands creatives.",
             img: "https://i.pravatar.cc/100?img=2",
         },
         {
-            name: "Michael Torres",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae consectetur eros.",
+            name: "Samuel Adebayo",
+            text: "From recording to final delivery, everything was seamless. The sound quality was amazing.",
             img: "https://i.pravatar.cc/100?img=3",
         },
         {
-            name: "Hamzat Abdul",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae consectetur eros.",
+            name: "Khadijat Bello",
+            text: "One of the best creative studios in Lagos. Affordable, well-equipped, and very welcoming.",
             img: "https://i.pravatar.cc/100?img=4",
         },
         {
-            name: "Danielle Carter",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae consectetur eros.",
+            name: "Esther Williams",
+            text: "“I missed my appointment by arriving two hours late, and the studio was fully booked afterward. I had no option but to choose another day. It was a bit frustrating, but it shows how busy and in-demand Digifted Hub is.”",
             img: "https://i.pravatar.cc/100?img=5",
         },
         {
-            name: "James Holloway",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae consectetur eros.",
+            name: "Tunde Olawale",
+            text: "Their attention to detail is impressive. The final output was exactly what we envisioned.",
             img: "https://i.pravatar.cc/100?img=6",
         },
     ];
@@ -57,11 +57,11 @@ const TestimonialsAndBlog = () => {
                                             {item.text}
                                         </p>
                                         <div className="flex items-center gap-3">
-                                            <img
+                                            {/* <img
                                                 src={item.img}
                                                 alt={item.name}
                                                 className="w-10 h-10 rounded-full object-cover"
-                                            />
+                                            /> */}
                                             <span className="font-semibold text-gray-800 text-sm">
                                                 {item.name}
                                             </span>
