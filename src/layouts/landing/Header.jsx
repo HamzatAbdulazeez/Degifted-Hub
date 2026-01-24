@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
+import { Menu, X, Facebook, Instagram, Youtube } from 'lucide-react';
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -85,7 +85,11 @@ const Header = () => {
                                 <NavLink
                                     key={index}
                                     to={item.path}
-                                    className="hover:text-red-500 transition-colors duration-200 font-normal text-sm"
+                                    className={({ isActive }) =>
+                                        `transition-colors duration-200 font-normal text-sm ${
+                                          isActive ? 'text-red-500 font-semibold' : 'text-black hover:text-red-500'
+                                        }`
+                                    }
                                 >
                                     {item.label}
                                 </NavLink>
@@ -96,7 +100,11 @@ const Header = () => {
                         <div className="flex items-center space-x-4">
                             <NavLink 
                                 to="/contact"
-                                className="hidden md:block cursor-pointer bg-[#053276] text-white px-8 py-3 rounded-md font-normal hover:bg-pink-50 transition-colors duration-200"
+                                className={({ isActive }) =>
+                                    `hidden md:block cursor-pointer bg-[#053276] text-white px-8 py-3 rounded-md font-normal transition-colors duration-200 ${
+                                      isActive ? 'bg-red-500 hover:bg-red-600' : 'hover:bg-[#053276]/90'
+                                    }`
+                                }
                             >
                                 Contact Us
                             </NavLink>
@@ -124,7 +132,7 @@ const Header = () => {
                             <div className="flex items-center justify-between mb-8">
                                 <div className="flex items-center space-x-2">
                                     <NavLink to="/">
-                                        <img src="https://res.cloudinary.com/ddj0k8gdw/image/upload/v1763488041/DigiftedHub/unnamed__1_-removebg-preview_gedaq0.png " className="h-10 w-auto"
+                                        <img src="https://res.cloudinary.com/ddj0k8gdw/image/upload/v1763488041/DigiftedHub/unnamed__1_-removebg-preview_gedaq0.png" className="h-10 w-auto"
                                             draggable="false" alt="" />
                                     </NavLink>
                                 </div>
@@ -142,7 +150,11 @@ const Header = () => {
                                     <NavLink
                                         key={index}
                                         to={item.path}
-                                        className="block py-2 px-4 rounded-lg hover:bg-white/20 transition-colors duration-200 text-base"
+                                        className={({ isActive }) =>
+                                            `block py-2 px-4 rounded-lg transition-colors duration-200 text-base ${
+                                              isActive ? 'bg-white/20 text-white font-semibold' : 'hover:bg-white/20'
+                                            }`
+                                        }
                                         onClick={toggleMobileMenu}
                                     >
                                         {item.label}
@@ -153,8 +165,12 @@ const Header = () => {
                             {/* Mobile Contact Us Button */}
                             <div className="mt-8">
                                 <NavLink
-                                    to="/contact-us"
-                                    className="w-full bg-white text-black px-6 py-3 rounded-md hover:bg-pink-50 transition-colors duration-200"
+                                    to="/contact"
+                                    className={({ isActive }) =>
+                                        `w-full bg-white text-black px-6 py-3 rounded-md transition-colors duration-200 ${
+                                          isActive ? 'bg-red-100 text-red-500' : 'hover:bg-pink-50'
+                                        }`
+                                    }
                                     onClick={toggleMobileMenu}
                                 >
                                     Contact Us

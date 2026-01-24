@@ -31,31 +31,99 @@ export class Footer extends Component {
 
             {/* Middle Section */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
-              {/* Links */}
-              <div className="space-y-8">
-                <a href="#" className="block text-lg font-semibold hover:text-pink-500 transition">
+              <div className="space-y-4">
+
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) =>
+                    `block text-base  transition ${isActive ? 'text-red-600' : 'text-white hover:text-red-600'
+                    }`
+                  }
+                >
+                  About Us
+                </NavLink>
+
+                <NavLink
+                  to="/services"
+                  className={({ isActive }) =>
+                    `block text-base  transition ${isActive ? 'text-red-600' : 'text-white hover:text-red-600'
+                    }`
+                  }
+                >
+                  Our Services
+                </NavLink>
+
+                <NavLink
+                  to="/studios"
+                  className={({ isActive }) =>
+                    `block text-base  transition ${isActive ? 'text-red-600' : 'text-white hover:text-red-600'
+                    }`
+                  }
+                >
                   Studios
-                </a>
-                <a href="#" className="block text-lg font-semibold hover:text-pink-500 transition">
+                </NavLink>
+
+                <NavLink
+                  to="/live-events"
+                  className={({ isActive }) =>
+                    `block text-base  transition ${isActive ? 'text-red-600' : 'text-white hover:text-red-600'
+                    }`
+                  }
+                >
                   Live & Events
-                </a>
-                <a href="#" className="block text-lg font-semibold hover:text-pink-500 transition">
-                  Blog
-                </a>
-                <a href="#" className="block text-lg font-semibold hover:text-pink-500 transition">
+                </NavLink>
+
+                <NavLink
+                  to="/pricing"
+                  className={({ isActive }) =>
+                    `block text-base  transition ${isActive ? 'text-red-600' : 'text-white hover:text-red-600'
+                    }`
+                  }
+                >
+                  Rental Pricing
+                </NavLink>
+
+                <NavLink
+                  to="/business-solutions"
+                  className={({ isActive }) =>
+                    `block text-base  transition ${isActive ? 'text-red-600' : 'text-white hover:text-red-600'
+                    }`
+                  }
+                >
                   Business Solutions
-                </a>
+                </NavLink>
+
+                <NavLink
+                  to="/contact"
+                  className={({ isActive }) =>
+                    `block text-base  transition ${isActive ? 'text-red-600' : 'text-white hover:text-red-600'
+                    }`
+                  }
+                >
+                  Contact Us
+                </NavLink>
+
+
+
+
               </div>
 
               {/* Get Started */}
               <div className="space-y-6">
-                <h3 className="text-xl font-semibold">Get Started</h3>
+                <h3 className="text-xl ">Get Started</h3>
                 <p className="text-gray-400 text-sm leading-loose">
                   At Digifted Creations Hub Limited is a leading multimedia and creative production company designed for visionary creators, businesses, and brands.
                 </p>
-                <button className="bg-gradient text-white px-8 py-3 cursor-pointer rounded-md transition">
-                  Get a Quote
-                </button>
+                <NavLink
+                  to="/contact"
+                  className="text-white hover:text-white flex items-center gap-2"
+                >
+                  <button className="bg-gradient text-white px-8 py-3 cursor-pointer rounded-md transition">
+                    Contact Us
+                  </button>
+                </NavLink>
+
+
               </div>
 
               {/* Social Links */}
