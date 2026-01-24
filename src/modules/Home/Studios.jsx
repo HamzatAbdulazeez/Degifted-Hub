@@ -1,40 +1,41 @@
 import React, { useState } from 'react';
 import BannerSection from './components/Breadcrumb';
 import { Camera, Video, Palette, Mic, Film, Play, Monitor, Lightbulb, Music, Image, Layers, Sparkles } from 'lucide-react';
+import { Link } from "react-router-dom";
 
 const Studio = () => {
   const [activeService, setActiveService] = useState(null);
 
   const services = [
-    { 
-      icon: <Video className="w-8 h-8" />, 
-      title: 'Video Production', 
-      desc: 'Professional video production services from concept to final delivery, including commercials, documentaries, and corporate videos with cinematic quality.' 
+    {
+      icon: <Video className="w-8 h-8" />,
+      title: 'Video Production',
+      desc: 'Professional video production services from concept to final delivery, including commercials, documentaries, and corporate videos with cinematic quality.'
     },
-    { 
-      icon: <Camera className="w-8 h-8" />, 
-      title: 'Photography', 
-      desc: 'Creative photography services for products, events, portraits, and commercial campaigns that capture your brand essence with stunning clarity.' 
+    {
+      icon: <Camera className="w-8 h-8" />,
+      title: 'Photography',
+      desc: 'Creative photography services for products, events, portraits, and commercial campaigns that capture your brand essence with stunning clarity.'
     },
-    { 
-      icon: <Palette className="w-8 h-8" />, 
-      title: 'Graphic Design', 
-      desc: 'Stunning visual designs for branding, marketing materials, social media content, and print collateral that make your brand stand out.' 
+    {
+      icon: <Palette className="w-8 h-8" />,
+      title: 'Graphic Design',
+      desc: 'Stunning visual designs for branding, marketing materials, social media content, and print collateral that make your brand stand out.'
     },
-    { 
-      icon: <Mic className="w-8 h-8" />, 
-      title: 'Audio Production', 
-      desc: 'Professional audio recording, mixing, and mastering for podcasts, music, voiceovers, and sound design with crystal-clear quality.' 
+    {
+      icon: <Mic className="w-8 h-8" />,
+      title: 'Audio Production',
+      desc: 'Professional audio recording, mixing, and mastering for podcasts, music, voiceovers, and sound design with crystal-clear quality.'
     },
-    { 
-      icon: <Film className="w-8 h-8" />, 
-      title: 'Animation', 
-      desc: '2D and 3D animation services including motion graphics, explainer videos, and character animation that bring your stories to life.' 
+    {
+      icon: <Film className="w-8 h-8" />,
+      title: 'Animation',
+      desc: '2D and 3D animation services including motion graphics, explainer videos, and character animation that bring your stories to life.'
     },
-    { 
-      icon: <Monitor className="w-8 h-8" />, 
-      title: 'Live Streaming', 
-      desc: 'High-quality live streaming solutions for events, webinars, conferences, and broadcasts with professional multi-camera setups.' 
+    {
+      icon: <Monitor className="w-8 h-8" />,
+      title: 'Live Streaming',
+      desc: 'High-quality live streaming solutions for events, webinars, conferences, and broadcasts with professional multi-camera setups.'
     }
   ];
 
@@ -89,18 +90,17 @@ const Studio = () => {
           <p className="text-black text-center mb-16 max-w-2xl mx-auto">
             Comprehensive creative solutions tailored to elevate your brand and captivate your audience
           </p>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, idx) => (
-              <div 
+              <div
                 key={idx}
                 onMouseEnter={() => setActiveService(idx)}
                 onMouseLeave={() => setActiveService(null)}
-                className={`bg-white rounded-xl p-6 border cursor-pointer transition-all transform hover:scale-105 shadow-md ${
-                  activeService === idx 
-                    ? 'border-[#053276] shadow-xl' 
+                className={`bg-white rounded-xl p-6 border cursor-pointer transition-all transform hover:scale-105 shadow-md ${activeService === idx
+                    ? 'border-[#053276] shadow-xl'
                     : 'border-gray-200 hover:border-gray-300'
-                }`}
+                  }`}
               >
                 <div className="w-16 h-16 bg-gradient-to-br from-[#053276] to-red-800 rounded-xl flex items-center justify-center text-white mb-6">
                   {service.icon}
@@ -120,14 +120,14 @@ const Studio = () => {
           <p className="text-white text-center mb-16 max-w-2xl mx-auto">
             Explore the exceptional facilities and equipment that make Digifted Hub the ultimate creative destination
           </p>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {studioFeatures.map((feature, idx) => (
-              <div 
-                key={idx} 
+              <div
+                key={idx}
                 className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all"
-                style={{ 
-                  animation: `slideUp 0.6s ease-out ${idx * 0.1}s backwards` 
+                style={{
+                  animation: `slideUp 0.6s ease-out ${idx * 0.1}s backwards`
                 }}
               >
                 <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center text-white mb-4">
@@ -145,7 +145,7 @@ const Studio = () => {
       <div className="bg-white Resizer">
         <div className="section">
           <h2 className="text-2xl md:text-3xl font-bold text-black text-center mb-16">Why Choose Our Studio?</h2>
-          
+
           <div className="grid md:grid-cols-2 gap-10">
             <div className="space-y-6">
               <div className="flex gap-4">
@@ -234,9 +234,11 @@ const Studio = () => {
               Whether you need a full production team or just want to rent our space, we're here to help bring your creative vision to life. Book a studio tour or consultation with our team to discuss your next project.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-3 border border-white text-white rounded-md text-base cursor-pointer hover:bg-white hover:text-[#053276] transition-all duration-300">
-                Contact Us
-              </button>
+              <Link to={"/contact"}>
+                <button className="px-8 py-3 border border-white text-white rounded-md text-base cursor-pointer hover:bg-white hover:text-[#053276] transition-all duration-300">
+                  Contact Us
+                </button>
+              </Link>
             </div>
           </div>
         </div>
