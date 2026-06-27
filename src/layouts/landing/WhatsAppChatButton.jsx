@@ -3,7 +3,7 @@ import { MessageCircle, X } from "lucide-react";
 
 const WhatsAppFloat = () => {
   const [isHovered, setIsHovered] = useState(false);
-  const phoneNumber = "+2349052464819"; // Format: country code + number (no + or spaces)
+  const phoneNumber = "+2349052464819"; 
   const message = "Hello! I'm interested in learning more about your services.";
   
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
