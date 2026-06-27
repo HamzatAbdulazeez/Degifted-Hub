@@ -21,7 +21,7 @@ const CaseStudySection = () => {
         <>
             <section className="section bg-black">
                 <div className="Resizer">
-                    <div className=" text-white px-4 relative overflow-hidden">
+                    <div className=" text-white px-6 relative overflow-hidden">
                         {/* Top Section */}
                         <div className="flex justify-between items-start mb-10">
                             <div>

@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { NavLink } from "react-router-dom";
-
+import { Linkedin, Instagram, X, Youtube, Facebook,  ArrowRight } from 'lucide-react';
 export class Footer extends Component {
   render() {
     return (
       <>
         <footer
-          className="bg-black text-white pt-16 pb-6 px-4 md:px-8 bg-cover bg-center bg-no-repeat"
+          className="bg-black text-white pt-16 pb-6 px-6 md:px-8 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: "url('https://res.cloudinary.com/ddj0k8gdw/image/upload/v1760532309/DigiftedHub/Group_1321314870_x5gyxo.jpg')",
           }}
@@ -17,15 +17,15 @@ export class Footer extends Component {
               {/* Logo */}
               <div className="flex flex-col gap-2">
                 <NavLink to="/">
-                  <img src="https://res.cloudinary.com/ddj0k8gdw/image/upload/v1763487665/DigiftedHub/unnamed_1_gnjx1p.jpg"
+                  <img src="https://res.cloudinary.com/ddj0k8gdw/image/upload/v1763488041/DigiftedHub/unnamed__1_-removebg-preview_gedaq0.png"
                     draggable="false" alt="" />
                 </NavLink>
               </div>
 
               {/* Contact Info */}
-              <div className="text-right text-sm space-y-2">
+              <div className="text-center md:text-right text-sm space-y-2">
                 <p>+234 9052464819</p>
-                <p>Email:  info@digiftedhub.com                </p>
+                <p>Email: info@digiftedhub.com</p>
               </div>
             </div>
 
@@ -129,30 +129,41 @@ export class Footer extends Component {
               {/* Social Links */}
               <div className="grid grid-cols-2 gap-3">
                 <a href="#" className="text-white hover:text-white flex items-center gap-2">
-                  <span>→</span> LINKEDIN
+                  <ArrowRight size={16} />
+                  <Linkedin size={16} />
+                  LINKEDIN
                 </a>
                 <a href="https://www.instagram.com/digiftedhub/" target='blank' className="text-white hover:text-white flex items-center gap-2">
-                  <span>→</span> INSTAGRAM
+                  <ArrowRight size={16} />
+                  <Instagram size={16} />
+                  INSTAGRAM
                 </a>
                 <a href="https://x.com/DigiftedHub" target='blank' className="text-white hover:text-white flex items-center gap-2">
-                  <span>→</span> X <span className="text-xs italic">(formerly Twitter)</span>
+                  <ArrowRight size={16} />
+                  <X size={16} />
+                  <span className="text-xs italic">(formerly Twitter)</span>
                 </a>
                 <a href="https://www.youtube.com/@DigiftedStudio" target='blank' className="text-white hover:text-white flex items-center gap-2">
-                  <span>→</span> YOUTUBE
+                  <ArrowRight size={16} />
+                  <Youtube size={16} />
+                  YOUTUBE
                 </a>
                 <a href="https://www.facebook.com/digiftedhub/" target='blank' className="text-white hover:text-white flex items-center gap-2">
-                  <span>→</span> FACEBOOK
+                  <ArrowRight size={16} />
+                  <Facebook size={16} />
+                  FACEBOOK
                 </a>
-                <a href="#" className="text-white hover:text-white flex items-center gap-2">
-                  <span>→</span> PINTEREST
-                </a>
+                {/* <a href="#" className="text-white hover:text-white flex items-center gap-2">
+                  <ArrowRight size={16} />
+                  <Pinterest size={16} />
+                </a> */}
               </div>
             </div>
 
             {/* Bottom Section */}
-            <div className="border-t border-[#5B5B5B] mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white">
+            <div className="border-t border-[#5B5B5B] mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white text-center md:text-left">
               <p>51, Babaponmile street, Onipetes estate, Mangoro Ikeja Lagos State.</p>
-              <p>© Copyright {new Date().getFullYear()} At Digifted Creations Hub Limited , All Rights Reserved</p>
+              <p>&copy; Copyright {new Date().getFullYear()} At Digifted Creations Hub Limited , All Rights Reserved</p>
             </div>
           </div>
         </footer>

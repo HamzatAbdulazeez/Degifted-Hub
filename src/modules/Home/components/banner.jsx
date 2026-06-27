@@ -73,7 +73,7 @@ const DynamicBanner = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 py-24 md:py-32 max-w-6xl mx-auto">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 sm:px-6 lg:px-8 py-24 md:py-32 max-w-6xl mx-auto">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-white mb-6">
           Your Vision,{" "}
           <span className="italic bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent animate-gradient-x">
@@ -103,9 +103,8 @@ const DynamicBanner = () => {
       {/* Image Gallery */}
       <div className="relative w-full overflow-x-auto pb-10  -mt-14 scrollbar-hide">
         <div
-          className={`flex gap-4 px-4 sm:px-8 w-max ${
-            isMobile ? "" : "animate-slide-left-slow"
-          }`}
+          className={`flex gap-4 px-6 sm:px-8 w-max ${isMobile ? "" : "animate-slide-left-slow"
+            }`}
         >
           {[...imageCards, ...(!isMobile ? imageCards : [])].map(
             (card, index) => (

@@ -86,8 +86,7 @@ const Header = () => {
                                     key={index}
                                     to={item.path}
                                     className={({ isActive }) =>
-                                        `transition-colors duration-200 font-normal text-sm ${
-                                          isActive ? 'text-red-500 font-semibold' : 'text-black hover:text-red-500'
+                                        `transition-colors duration-200 font-normal text-sm ${isActive ? 'text-red-500 font-semibold' : 'text-black hover:text-red-500'
                                         }`
                                     }
                                 >
@@ -98,11 +97,10 @@ const Header = () => {
 
                         {/* Contact Us Button & Mobile Menu Toggle */}
                         <div className="flex items-center space-x-4">
-                            <NavLink 
+                            <NavLink
                                 to="/contact"
                                 className={({ isActive }) =>
-                                    `hidden md:block cursor-pointer bg-[#053276] text-white px-8 py-3 rounded-md font-normal transition-colors duration-200 ${
-                                      isActive ? 'bg-red-500 hover:bg-red-600' : 'hover:bg-[#053276]/90'
+                                    `hidden md:block cursor-pointer bg-[#053276] text-white px-8 py-3 rounded-md font-normal transition-colors duration-200 ${isActive ? 'bg-red-500 hover:bg-red-600' : 'hover:bg-[#053276]/90'
                                     }`
                                 }
                             >
@@ -151,8 +149,7 @@ const Header = () => {
                                         key={index}
                                         to={item.path}
                                         className={({ isActive }) =>
-                                            `block py-2 px-4 rounded-lg transition-colors duration-200 text-base ${
-                                              isActive ? 'bg-white/20 text-white font-semibold' : 'hover:bg-white/20'
+                                            `block py-2 px-6 rounded-lg transition-colors duration-200 text-base ${isActive ? 'bg-white/20 text-white font-semibold' : 'hover:bg-white/20'
                                             }`
                                         }
                                         onClick={toggleMobileMenu}
@@ -167,8 +164,7 @@ const Header = () => {
                                 <NavLink
                                     to="/contact"
                                     className={({ isActive }) =>
-                                        `w-full bg-white text-black px-6 py-3 rounded-md transition-colors duration-200 ${
-                                          isActive ? 'bg-red-100 text-red-500' : 'hover:bg-pink-50'
+                                        `w-full bg-white text-black px-6 py-3 rounded-md transition-colors duration-200 ${isActive ? 'bg-red-100 text-red-500' : 'hover:bg-pink-50'
                                         }`
                                     }
                                     onClick={toggleMobileMenu}
@@ -177,7 +173,7 @@ const Header = () => {
                                 </NavLink>
                             </div>
 
-                            
+
                         </div>
                     </div>
                 </div>

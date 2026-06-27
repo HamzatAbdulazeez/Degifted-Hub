@@ -13,12 +13,12 @@ const AboutUs = () => {
         { role: 'Marketing Experts', count: '5+', icon: <TrendingUp className="w-6 h-6" /> }
     ];
 
-    const milestones = [
-        { year: '2016', event: 'Digifted Hub Founded', desc: 'Started our journey with a vision to transform creative production in Nigeria' },
-        { year: '2018', event: 'First Major Studio Launch', desc: 'Opened our state-of-the-art recording and production facility' },
-        { year: '2020', event: 'Digital Expansion', desc: 'Launched comprehensive digital marketing and live streaming services' },
-        { year: '2024', event: 'Industry Recognition', desc: 'Became a leading creative hub serving 100+ clients across Africa' }
-    ];
+    // const milestones = [
+    //     { year: '2016', event: 'Digifted Hub Founded', desc: 'Started our journey with a vision to transform creative production in Nigeria' },
+    //     { year: '2018', event: 'First Major Studio Launch', desc: 'Opened our state-of-the-art recording and production facility' },
+    //     { year: '2020', event: 'Digital Expansion', desc: 'Launched comprehensive digital marketing and live streaming services' },
+    //     { year: '2024', event: 'Industry Recognition', desc: 'Became a leading creative hub serving 100+ clients across Africa' }
+    // ];
 
     const achievements = [
         { title: 'Award-Winning Productions', desc: 'Recognized for excellence in multimedia content creation', icon: <Award className="w-8 h-8" /> },
@@ -63,8 +63,8 @@ const AboutUs = () => {
             </div>
 
             {/* Mission & Vision Section */}
-            <div className="bg-black section text-white px-4">
-                <div className="Resizer mx-auto px-4">
+            <div className="bg-black section text-white px-6">
+                <div className="Resizer mx-auto px-6">
                     <div className="grid md:grid-cols-2 gap-8">
                         {/* Mission */}
                         <div className="space-y-4" style={{ animation: 'slideUp 0.8s ease-out' }}>
@@ -117,7 +117,7 @@ const AboutUs = () => {
             </div>
 
             {/* Our Story/Journey Timeline */}
-            {/* <div className="bg-gray-50 px-4">
+            {/* <div className="bg-gray-50 px-6">
                 <div className="section Resizer mx-auto">
                     <h2 className="text-2xl md:text-3xl font-bold text-black text-center mb-4">Our Journey</h2>
                     <p className="text-black text-center mb-16 max-w-2xl mx-auto">
@@ -147,7 +147,7 @@ const AboutUs = () => {
             </div> */}
 
             {/* Our Team Expertise */}
-            <div className="bg-gray-50 px-4">
+            <div className="bg-gray-50 px-6">
                 <div className="section Resizer mx-auto">
                     <h2 className="text-2xl md:text-3xl font-bold text-black text-center mb-4">Our Expert Team</h2>
                     <p className="text-black text-center mb-16 max-w-2xl mx-auto">
@@ -156,8 +156,8 @@ const AboutUs = () => {
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {teamMembers.map((member, idx) => (
-                            <div 
-                                key={idx} 
+                            <div
+                                key={idx}
                                 className="bg-gradient-to-br from-gray-50 to-white rounded-xl p-6 border-2 border-gray-200 hover:border-[#053276] transition-all hover:shadow-lg"
                                 style={{ animation: `slideUp 0.6s ease-out ${idx * 0.1}s backwards` }}
                             >
@@ -173,7 +173,7 @@ const AboutUs = () => {
             </div>
 
             {/* Achievements Section */}
-            <div className="bg-gradient-to-br from-[#053276] to-indigo-900 px-4">
+            <div className="bg-gradient-to-br from-[#053276] to-indigo-900 px-6">
                 <div className="section Resizer mx-auto">
                     <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-4">Our Achievements</h2>
                     <p className="text-white/90 text-center mb-16 max-w-2xl mx-auto">
@@ -182,8 +182,8 @@ const AboutUs = () => {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {achievements.map((achievement, idx) => (
-                            <div 
-                                key={idx} 
+                            <div
+                                key={idx}
                                 className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all text-center"
                                 style={{ animation: `slideUp 0.6s ease-out ${idx * 0.1}s backwards` }}
                             >
@@ -199,7 +199,7 @@ const AboutUs = () => {
             </div>
 
             {/* What Sets Us Apart */}
-            <div className="bg-white px-4">
+            <div className="bg-white px-6">
                 <div className="section Resizer mx-auto">
                     <h2 className="text-2xl md:text-3xl font-bold text-black text-center mb-16">What Sets Us Apart</h2>
 
@@ -288,7 +288,7 @@ const AboutUs = () => {
             </section>
 
             {/* CTA Section */}
-            <div className="Resizer mx-auto px-4 pb-24 pt-24">
+            <div className="Resizer mx-auto px-6 pb-24 pt-24">
                 <div className="relative overflow-hidden bg-[#053276] rounded-md">
                     <div className="absolute inset-0 opacity-20" style={{
                         backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',
@@ -303,9 +303,9 @@ const AboutUs = () => {
                             Join our community of creators and innovators at Digifted Hub. Whether you're looking to elevate your brand, produce stunning content, or explore new creative horizons, we're here to help you succeed.
                         </p>
                         <Link to={"/contact"}>
-                        <button className="px-8 py-3 bg-white text-[#053276] rounded-md text-base cursor-pointer hover:scale-105 transition-all duration-300">
-                            Contact Us Today
-                        </button>
+                            <button className="px-8 py-3 bg-white text-[#053276] rounded-md text-base cursor-pointer hover:scale-105 transition-all duration-300">
+                                Contact Us Today
+                            </button>
                         </Link>
                     </div>
                 </div>

@@ -4,6 +4,7 @@ import PortfolioSection from './components/PortfolioSection';
 import CaseStudySection from './components/CaseStudySection';
 import TestimonialsAndBlog from './components/TestimonialsAndBlog';
 import NextBanner from './components/NextBanner';
+
 // import Lunching from './components/Luch';
 
 export default function NewHome() {
@@ -15,6 +16,7 @@ export default function NewHome() {
             <PortfolioSection />
             <CaseStudySection />
             <TestimonialsAndBlog />
+           
             {/* <Lunching /> */}
         </>
     );

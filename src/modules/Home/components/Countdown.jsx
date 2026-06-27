@@ -32,7 +32,7 @@ export default function Countdown({ target }) {
     <div className="flex justify-center gap-4 md:gap-8 text-2xl md:text-4xl font-mono">
       {["days", "hours", "minutes", "seconds"].map((unit) => (
         <div key={unit} className="flex flex-col items-center">
-          <div className="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2 md:px-6 md:py-3">
+          <div className="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-2 md:px-6 md:py-3">
             {timeLeft[unit] !== undefined ? format(timeLeft[unit]) : "00"}
           </div>
           <span className="mt-2 text-sm uppercase tracking-wider opacity-80">

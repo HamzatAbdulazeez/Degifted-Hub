@@ -26,7 +26,7 @@ const WhyChooseUs = () => {
     <>
       <div className="section">
         <div className="Resizer">
-          <div className="w-full px-4 flex flex-col md:flex-row items-center justify-center gap-10">
+          <div className="w-full px-6 flex flex-col md:flex-row items-center justify-center gap-10">
             {/* Left - Image with underground background */}
             <div className="relative w-full md:w-1/2 rounded-lg overflow-hidden h-[400px]">
               {/* Background image */}

@@ -24,11 +24,11 @@ const BannerSection = ({
             {backgroundImage && (
                 <div className={`absolute inset-0 bg-black/70 ${overlayOpacity}`}></div>
             )}
-            
+
             {/* Content */}
             <div className="relative z-10">
                 <h1 className="text-2xl md:text-4xl font-bold mb-4">{title}</h1>
-                <p className="text-sm md:text-base mb-4 px-4">{subtitle}</p>
+                <p className="text-sm md:text-base mb-4 px-6">{subtitle}</p>
 
                 {buttonText && buttonLink && (
                     <Link

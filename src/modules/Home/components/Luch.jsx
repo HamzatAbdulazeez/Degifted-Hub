@@ -1,4 +1,4 @@
-import { useState,  } from "react";
+import { useState, } from "react";
 import Countdown from './Countdown';
 
 export default function App() {
@@ -29,7 +29,7 @@ export default function App() {
   return (
     <>
       {/* Hero */}
-      <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 text-white px-4">
+      <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 text-white px-6">
         <div className="max-w-4xl mx-auto text-center space-y-12">
           {/* Logo */}
           <img src='https://res.cloudinary.com/ddj0k8gdw/image/upload/v1759071880/DigiftedHub/Frame_3_bgkxcs.png' alt="Logo" className="mx-auto h-20 md:h-28" />

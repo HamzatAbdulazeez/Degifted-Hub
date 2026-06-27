@@ -6,35 +6,35 @@ const LiveEvents = () => {
   const [activeEvent, setActiveEvent] = useState(null);
 
   const eventServices = [
-    { 
-      icon: <Video className="w-8 h-8" />, 
-      title: 'Live Streaming', 
-      desc: 'Professional multi-camera live streaming for conferences, webinars, product launches, and corporate events with real-time engagement.' 
+    {
+      icon: <Video className="w-8 h-8" />,
+      title: 'Live Streaming',
+      desc: 'Professional multi-camera live streaming for conferences, webinars, product launches, and corporate events with real-time engagement.'
     },
-    { 
-      icon: <Camera className="w-8 h-8" />, 
-      title: 'Event Coverage', 
-      desc: 'Complete event documentation with photography and videography services that capture every important moment beautifully.' 
+    {
+      icon: <Camera className="w-8 h-8" />,
+      title: 'Event Coverage',
+      desc: 'Complete event documentation with photography and videography services that capture every important moment beautifully.'
     },
-    { 
-      icon: <Mic className="w-8 h-8" />, 
-      title: 'Audio & Stage Management', 
-      desc: 'Professional sound engineering, stage setup, and technical management for flawless event execution.' 
+    {
+      icon: <Mic className="w-8 h-8" />,
+      title: 'Audio & Stage Management',
+      desc: 'Professional sound engineering, stage setup, and technical management for flawless event execution.'
     },
-    { 
-      icon: <Tv className="w-8 h-8" />, 
-      title: 'Hybrid Events', 
-      desc: 'Seamlessly blend in-person and virtual experiences with our hybrid event solutions for maximum reach and engagement.' 
+    {
+      icon: <Tv className="w-8 h-8" />,
+      title: 'Hybrid Events',
+      desc: 'Seamlessly blend in-person and virtual experiences with our hybrid event solutions for maximum reach and engagement.'
     },
-    { 
-      icon: <Music className="w-8 h-8" />, 
-      title: 'Concerts & Performances', 
-      desc: 'Full production services for concerts, shows, and live performances with professional lighting and sound design.' 
+    {
+      icon: <Music className="w-8 h-8" />,
+      title: 'Concerts & Performances',
+      desc: 'Full production services for concerts, shows, and live performances with professional lighting and sound design.'
     },
-    { 
-      icon: <Trophy className="w-8 h-8" />, 
-      title: 'Awards & Ceremonies', 
-      desc: 'Elegant production for award ceremonies, galas, and corporate celebrations that create memorable experiences.' 
+    {
+      icon: <Trophy className="w-8 h-8" />,
+      title: 'Awards & Ceremonies',
+      desc: 'Elegant production for award ceremonies, galas, and corporate celebrations that create memorable experiences.'
     }
   ];
 
@@ -89,18 +89,17 @@ const LiveEvents = () => {
           <p className="text-black text-center mb-16 max-w-2xl mx-auto">
             Comprehensive event production solutions tailored to your specific needs
           </p>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {eventServices.map((service, idx) => (
-              <div 
+              <div
                 key={idx}
                 onMouseEnter={() => setActiveEvent(idx)}
                 onMouseLeave={() => setActiveEvent(null)}
-                className={`bg-white rounded-xl p-6 border-2 cursor-pointer transition-all transform hover:scale-105 shadow-md ${
-                  activeEvent === idx 
-                    ? 'border-[#053276] shadow-xl' 
+                className={`bg-white rounded-xl p-6 border-2 cursor-pointer transition-all transform hover:scale-105 shadow-md ${activeEvent === idx
+                    ? 'border-[#053276] shadow-xl'
                     : 'border-gray-200 hover:border-gray-300'
-                }`}
+                  }`}
               >
                 <div className="w-16 h-16 bg-gradient-to-br from-[#053276] to-red-800 rounded-xl flex items-center justify-center text-white mb-6">
                   {service.icon}
@@ -120,11 +119,11 @@ const LiveEvents = () => {
           <p className="text-white text-center mb-16 max-w-2xl mx-auto">
             We specialize in a wide range of events, each produced with excellence and attention to detail
           </p>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {eventTypes.map((type, idx) => (
-              <div 
-                key={idx} 
+              <div
+                key={idx}
                 className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all"
                 style={{ animation: `slideUp 0.6s ease-out ${idx * 0.1}s backwards` }}
               >
@@ -143,7 +142,7 @@ const LiveEvents = () => {
       <div className="bg-white Resizer">
         <div className="section">
           <h2 className="text-2xl md:text-3xl font-bold text-black text-center mb-16">Why Choose Digifted Hub for Your Events?</h2>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-[#053276] rounded-full flex items-center justify-center mx-auto mb-4">
@@ -179,7 +178,7 @@ const LiveEvents = () => {
       </div>
 
       {/* CTA */}
-      <div className="Resizer mx-auto px-4 pb-24">
+      <div className="Resizer mx-auto px-6 pb-24">
         <div className="relative overflow-hidden bg-[#053276] rounded-md">
           <div className="absolute inset-0 opacity-20" style={{
             backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',

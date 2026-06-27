@@ -1,41 +1,41 @@
 import React, { useState } from 'react';
 import BannerSection from './components/Breadcrumb';
-import { Target, Video, BarChart, Lightbulb, Briefcase, TrendingUp, Rocket, Users, Zap, CheckCircle, Award , Phone } from 'lucide-react';
+import { Target, Video, BarChart, Lightbulb, Briefcase, TrendingUp, Rocket, Users, Zap, CheckCircle, Award, Phone } from 'lucide-react';
 import { Link } from "react-router-dom";
 
 const BusinessSolutions = () => {
   const [activeSolution, setActiveSolution] = useState(null);
 
   const solutions = [
-    { 
-      icon: <Target className="w-8 h-8" />, 
-      title: 'Brand Strategy & Development', 
-      desc: 'Comprehensive brand positioning, identity design, and messaging strategies that differentiate your business in the marketplace.' 
+    {
+      icon: <Target className="w-8 h-8" />,
+      title: 'Brand Strategy & Development',
+      desc: 'Comprehensive brand positioning, identity design, and messaging strategies that differentiate your business in the marketplace.'
     },
-    { 
-      icon: <Video className="w-8 h-8" />, 
-      title: 'Corporate Video Production', 
-      desc: 'Professional video content for internal communications, training, testimonials, and corporate storytelling that engages your audience.' 
+    {
+      icon: <Video className="w-8 h-8" />,
+      title: 'Corporate Video Production',
+      desc: 'Professional video content for internal communications, training, testimonials, and corporate storytelling that engages your audience.'
     },
-    { 
-      icon: <BarChart className="w-8 h-8" />, 
-      title: 'Digital Marketing Campaigns', 
-      desc: 'Data-driven marketing strategies across social media, content marketing, and digital advertising to grow your business.' 
+    {
+      icon: <BarChart className="w-8 h-8" />,
+      title: 'Digital Marketing Campaigns',
+      desc: 'Data-driven marketing strategies across social media, content marketing, and digital advertising to grow your business.'
     },
-    { 
-      icon: <Lightbulb className="w-8 h-8" />, 
-      title: 'Creative Consulting', 
-      desc: 'Expert guidance on creative direction, campaign concepts, and innovative solutions to achieve your business objectives.' 
+    {
+      icon: <Lightbulb className="w-8 h-8" />,
+      title: 'Creative Consulting',
+      desc: 'Expert guidance on creative direction, campaign concepts, and innovative solutions to achieve your business objectives.'
     },
-    { 
-      icon: <Briefcase className="w-8 h-8" />, 
-      title: 'Corporate Events & Webinars', 
-      desc: 'Full-service production for corporate events, product launches, town halls, and virtual conferences.' 
+    {
+      icon: <Briefcase className="w-8 h-8" />,
+      title: 'Corporate Events & Webinars',
+      desc: 'Full-service production for corporate events, product launches, town halls, and virtual conferences.'
     },
-    { 
-      icon: <TrendingUp className="w-8 h-8" />, 
-      title: 'Content Marketing Solutions', 
-      desc: 'Strategic content creation including blogs, videos, infographics, and social media content that drives engagement and conversions.' 
+    {
+      icon: <TrendingUp className="w-8 h-8" />,
+      title: 'Content Marketing Solutions',
+      desc: 'Strategic content creation including blogs, videos, infographics, and social media content that drives engagement and conversions.'
     }
   ];
 
@@ -91,24 +91,23 @@ const BusinessSolutions = () => {
       </div>
 
       {/* Solutions */}
-      <div className="bg-gray-50 px-4">
+      <div className="bg-gray-50 px-6">
         <div className="section Resizer mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-black text-center mb-4">Our Business Solutions</h2>
           <p className="text-black text-center mb-16 max-w-2xl mx-auto">
             Comprehensive services designed to help your business thrive in the digital age
           </p>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {solutions.map((solution, idx) => (
-              <div 
+              <div
                 key={idx}
                 onMouseEnter={() => setActiveSolution(idx)}
                 onMouseLeave={() => setActiveSolution(null)}
-                className={`bg-white rounded-xl p-6 border cursor-pointer transition-all transform hover:scale-105 shadow-md ${
-                  activeSolution === idx 
-                    ? 'border-[#053276] shadow-xl' 
+                className={`bg-white rounded-xl p-6 border cursor-pointer transition-all transform hover:scale-105 shadow-md ${activeSolution === idx
+                    ? 'border-[#053276] shadow-xl'
                     : 'border-gray-200 hover:border-gray-300'
-                }`}
+                  }`}
               >
                 <div className="w-16 h-16 bg-gradient-to-br from-[#053276] to-red-800 rounded-xl flex items-center justify-center text-white mb-6">
                   {solution.icon}
@@ -122,17 +121,17 @@ const BusinessSolutions = () => {
       </div>
 
       {/* Industries */}
-      <div className="bg-gradient-to-r from-[#053276] to-red-800 px-4">
+      <div className="bg-gradient-to-r from-[#053276] to-red-800 px-6">
         <div className="section Resizer mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-4">Industries We Serve</h2>
           <p className="text-white text-center mb-16 max-w-2xl mx-auto">
             Delivering tailored creative solutions across diverse sectors
           </p>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {industries.map((industry, idx) => (
-              <div 
-                key={idx} 
+              <div
+                key={idx}
                 className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all text-center"
                 style={{ animation: `slideUp 0.6s ease-out ${idx * 0.1}s backwards` }}
               >
@@ -150,7 +149,7 @@ const BusinessSolutions = () => {
       <div className="bg-white Resizer">
         <div className="section">
           <h2 className="text-2xl md:text-3xl font-bold text-black text-center mb-16">Why Partner With Digifted Hub?</h2>
-          
+
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             <div className="text-center">
               <div className="w-16 h-16 bg-[#053276] rounded-full flex items-center justify-center mx-auto mb-4">
@@ -200,13 +199,13 @@ const BusinessSolutions = () => {
       </div>
 
       {/* Success Stories */}
-      <div className="bg-gray-100 px-4">
+      <div className="bg-gray-100 px-6">
         <div className="section Resizer mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-black text-center mb-4">Client Success Stories</h2>
           <p className="text-black text-center mb-16 max-w-2xl mx-auto">
             Real results from businesses we've partnered with
           </p>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white rounded-xl p-8 shadow-lg">
               <div className="w-12 h-12 bg-[#053276] rounded-full flex items-center justify-center mb-6">
@@ -245,7 +244,7 @@ const BusinessSolutions = () => {
       </div>
 
       {/* CTA */}
-      <div className="Resizer mx-auto px-4 pb-24">
+      <div className="Resizer mx-auto px-6 pb-24">
         <div className="relative overflow-hidden bg-[#053276] rounded-md">
           <div className="absolute inset-0 opacity-20" style={{
             backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',
@@ -267,7 +266,7 @@ const BusinessSolutions = () => {
               </Link>
               <button className="px-8 py-3 border-2 border-white text-white rounded-md text-base font-semibold cursor-pointer hover:bg-white hover:text-[#053276] transition-all duration-300 flex items-center justify-center gap-2">
                 <Phone className="w-5 h-5" />
-                Call: +234 905 246 4819 
+                Call: +234 905 246 4819
               </button>
             </div>
           </div>

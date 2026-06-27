@@ -84,7 +84,7 @@ const Studio = () => {
       </div>
 
       {/* Our Services */}
-      <div className="bg-gray-50 px-4">
+      <div className="bg-gray-50 px-6">
         <div className="section Resizer mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-black text-center mb-4">Our Studio Services</h2>
           <p className="text-black text-center mb-16 max-w-2xl mx-auto">
@@ -98,8 +98,8 @@ const Studio = () => {
                 onMouseEnter={() => setActiveService(idx)}
                 onMouseLeave={() => setActiveService(null)}
                 className={`bg-white rounded-xl p-6 border cursor-pointer transition-all transform hover:scale-105 shadow-md ${activeService === idx
-                    ? 'border-[#053276] shadow-xl'
-                    : 'border-gray-200 hover:border-gray-300'
+                  ? 'border-[#053276] shadow-xl'
+                  : 'border-gray-200 hover:border-gray-300'
                   }`}
               >
                 <div className="w-16 h-16 bg-gradient-to-br from-[#053276] to-red-800 rounded-xl flex items-center justify-center text-white mb-6">
@@ -114,7 +114,7 @@ const Studio = () => {
       </div>
 
       {/* Studio Features */}
-      <div className="bg-gradient-to-r from-[#053276] to-red-800 px-4">
+      <div className="bg-gradient-to-r from-[#053276] to-red-800 px-6">
         <div className="section Resizer mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-4">Studio Features & Facilities</h2>
           <p className="text-white text-center mb-16 max-w-2xl mx-auto">
@@ -219,7 +219,7 @@ const Studio = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="Resizer mx-auto px-4 pb-24">
+      <div className="Resizer mx-auto px-6 pb-24">
         <div className="relative overflow-hidden bg-[#053276] rounded-md">
           <div className="absolute inset-0 opacity-20" style={{
             backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',

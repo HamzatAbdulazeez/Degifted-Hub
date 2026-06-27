@@ -40,7 +40,7 @@ const TestimonialsAndBlog = () => {
         <>
             <section className="section">
                 <div className="Resizer">
-                    <section className="px-4 space-y-20">
+                    <section className="px-6 space-y-20">
                         {/* Testimonials Section */}
                         <div>
                             <div className="flex items-center gap-2 mb-2">
@@ -116,10 +116,10 @@ const TestimonialsAndBlog = () => {
                                                 "url('https://res.cloudinary.com/ddj0k8gdw/image/upload/v1760530681/DigiftedHub/Rectangle_27_z7ylgv.jpg')",
                                         }}
                                     ></div>
-                                    
+
                                 </div>
-                                 {/* Big Left Image */}
-                                 <div
+                                {/* Big Left Image */}
+                                <div
                                     className="rounded-lg overflow-hidden h-72 lg:h-full bg-cover bg-center"
                                     style={{
                                         backgroundImage:

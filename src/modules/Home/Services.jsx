@@ -158,7 +158,7 @@ const OurServices = () => {
 
             {/* Services Overview */}
             <div className="bg-white">
-                <div className="section Resizer mx-auto">
+                <div className="section Resizer mx-auto px-6">
                     <h2 className="text-2xl md:text-3xl font-bold text-black text-center mb-4">
                         What We Offer
                     </h2>
@@ -196,11 +196,11 @@ const OurServices = () => {
                     key={service.id}
                     className={idx % 2 === 0 ? 'bg-gray-50' : 'bg-white'}
                 >
-                    <div className="section Resizer mx-auto">
+                    <div className="section Resizer mx-auto  px-6">
                         <div className="grid md:grid-cols-2 gap-10 items-center">
                             {/* Content - Alternating Left/Right */}
                             <div className={idx % 2 === 0 ? 'order-1' : 'order-2'}>
-                                <div className="inline-flex items-center gap-2 bg-[#053276] text-white px-4 py-2 rounded-full text-sm mb-4">
+                                <div className="inline-flex items-center gap-2 bg-[#053276] text-white px-6 py-2 rounded-full text-sm mb-4">
                                     <span>Service {service.id}</span>
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-bold text-black leading-relaxed mb-3">
@@ -245,7 +245,7 @@ const OurServices = () => {
             ))}
 
             {/* Why Choose Our Services */}
-            <div className="bg-gradient-to-r from-[#053276] to-red-800">
+            <div className="bg-gradient-to-r from-[#053276] to-red-800  px-6">
                 <div className="section Resizer mx-auto">
                     <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-4">
                         Why Choose Digifted Hub?
@@ -294,7 +294,7 @@ const OurServices = () => {
 
             {/* Service Packages */}
             <div className="bg-white">
-                <div className="section Resizer mx-auto">
+                <div className="section Resizer mx-auto  px-6">
                     <h2 className="text-2xl md:text-3xl font-bold text-black text-center mb-4">
                         Flexible Service Packages
                     </h2>
@@ -346,7 +346,7 @@ const OurServices = () => {
                                     }`}
                             >
                                 {pkg.popular && (
-                                    <div className="inline-block bg-[#053276] text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                                    <div className="inline-block bg-[#053276] text-white px-6 py-1 rounded-full text-sm font-semibold mb-4">
                                         Most Popular
                                     </div>
                                 )}
@@ -373,7 +373,7 @@ const OurServices = () => {
             </div>
 
             {/* CTA Section */}
-            <div className="Resizer mx-auto px-4 pb-24">
+            <div className="Resizer mx-auto px-6 pb-24">
                 <div className="relative overflow-hidden bg-[#053276] rounded-md">
                     <div className="absolute inset-0 opacity-20" style={{
                         backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',

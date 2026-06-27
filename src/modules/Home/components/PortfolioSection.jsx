@@ -14,7 +14,7 @@ const PortfolioSection = () => {
         <>
             <section className="just">
                 <div className="Resizer">
-                    <div className="w-full px-4 relative">
+                    <div className="w-full px-6 relative">
                         {/* Top text section */}
                         <div className="max-w-5xl">
                             <p className="text-sm font-medium text-pink-600 mb-2 flex items-center gap-2">

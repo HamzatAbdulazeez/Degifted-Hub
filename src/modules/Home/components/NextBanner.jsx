@@ -6,7 +6,7 @@ const AboutUs = () => {
     <>
       <div className="section bg-gray-100">
         <div className="Resizer">
-          <div className="w-full px-4 flex flex-col md:flex-row items-center justify-center gap-10">
+          <div className="w-full px-6 flex flex-col md:flex-row items-center justify-center gap-10">
 
 
             {/* Left - About Us Content */}
@@ -35,9 +35,9 @@ const AboutUs = () => {
 
 
               <Link to={"/contact"}>
-              <button className="bg-gradient text-white py-4 px-8 cursor-pointer rounded-lg transition">
-                Contact Us
-              </button>
+                <button className="bg-gradient text-white py-4 px-8 cursor-pointer rounded-lg transition">
+                  Contact Us
+                </button>
               </Link>
             </div>
 

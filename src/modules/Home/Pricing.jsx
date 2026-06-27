@@ -153,7 +153,7 @@ const Pricing = () => {
             </div>
 
             {/* Category Tabs */}
-            <div className="bg-gray-50 px-4">
+            <div className="bg-gray-50 px-6">
                 <div className="Resizer mx-auto">
                     <div className="flex flex-wrap justify-center gap-3">
                         {categories.map((category) => (
@@ -161,8 +161,8 @@ const Pricing = () => {
                                 key={category.id}
                                 onClick={() => setActiveCategory(category.id)}
                                 className={`flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all ${activeCategory === category.id
-                                        ? 'bg-gradient-to-r from-[#053276] to-red-800 text-white shadow-lg'
-                                        : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'
+                                    ? 'bg-gradient-to-r from-[#053276] to-red-800 text-white shadow-lg'
+                                    : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'
                                     }`}
                             >
                                 {category.icon}
@@ -174,21 +174,21 @@ const Pricing = () => {
             </div>
 
             {/* Pricing Cards */}
-            <div className="bg-white px-4">
+            <div className="bg-white px-6">
                 <div className="section Resizer mx-auto">
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {currentServices.map((service, idx) => (
                             <div
                                 key={idx}
                                 className={`bg-white rounded-xl p-6 border-2 transition-all hover:shadow-xl ${service.featured
-                                        ? 'border-[#053276] shadow-lg relative'
-                                        : 'border-gray-200 hover:border-gray-300'
+                                    ? 'border-[#053276] shadow-lg relative'
+                                    : 'border-gray-200 hover:border-gray-300'
                                     }`}
                                 style={{ animation: `slideUp 0.6s ease-out ${idx * 0.1}s backwards` }}
                             >
                                 {service.featured && (
                                     <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                                        <div className="bg-gradient-to-r from-[#053276] to-red-800 text-white px-4 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
+                                        <div className="bg-gradient-to-r from-[#053276] to-red-800 text-white px-6 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
                                             <Star className="w-3 h-3" />
                                             Popular
                                         </div>
@@ -232,7 +232,7 @@ const Pricing = () => {
             </div>
 
             {/* Why Choose Our Pricing */}
-            <div className="bg-gray-50 px-4">
+            <div className="bg-gray-50 px-6">
                 <div className="section Resizer mx-auto">
                     <h2 className="text-2xl md:text-3xl font-bold text-black text-center mb-16">
                         Why Our Pricing Works for You
@@ -274,7 +274,7 @@ const Pricing = () => {
             </div>
 
             {/* Pricing Notes */}
-            <div className="bg-white px-4">
+            <div className="bg-white px-6">
                 <div className="section Resizer mx-auto">
                     <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-8 border-2 border-[#053276]/20">
                         <h3 className="text-2xl font-bold text-black mb-6 text-center">Important Pricing Information</h3>
@@ -317,7 +317,7 @@ const Pricing = () => {
             </div>
 
             {/* Custom Services CTA */}
-            <div className="bg-gradient-to-r from-[#053276] to-red-800 px-4">
+            <div className="bg-gradient-to-r from-[#053276] to-red-800 px-6">
                 <div className="section Resizer mx-auto text-center">
                     <MessageSquare className="w-16 h-16 text-white mx-auto mb-6" />
                     <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
@@ -341,7 +341,7 @@ const Pricing = () => {
             </div>
 
             {/* Final CTA */}
-            <div className="Resizer mx-auto px-4 pb-24 pt-24">
+            <div className="Resizer mx-auto px-6 pb-24 pt-24">
                 <div className="relative overflow-hidden bg-[#053276] rounded-md">
                     <div className="absolute inset-0 opacity-20" style={{
                         backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',
