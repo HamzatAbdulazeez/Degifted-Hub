@@ -42,7 +42,7 @@ const PortfolioSection = () => {
                             {companies.map((item) => (
                                 <div
                                     key={item.id}
-                                    className="flex items-cente mb-3 justify-center h-64 transition"
+                                    className="flex items-center mb-3 justify-center h-64 transition"
                                 >
                                     <img
                                         src={item.logo}
